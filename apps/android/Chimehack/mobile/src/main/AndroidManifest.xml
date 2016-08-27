@@ -36,11 +36,16 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <service
+                android:name=".ListenerService" >
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </service>
         </activity>
     </application>
 

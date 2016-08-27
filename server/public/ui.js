@@ -13,10 +13,12 @@
 
     $(document).ready(function () {
 
-	     startPlayer($('#stream').val());
+        var streamUri = "";
+
+	     startPlayer(streamUri);
 
         $('#start').click(function () {
-	         startPlayer($('#stream').val());         
+	         startPlayer(streamUri);         
         });
         $('#stop').click(function () {
             jwplayer('player').stop();            
