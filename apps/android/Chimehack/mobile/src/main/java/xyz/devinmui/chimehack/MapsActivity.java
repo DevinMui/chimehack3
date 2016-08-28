@@ -63,6 +63,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mSurfaceView.getHolder().addCallback(this);
 
         selectQuality();
+
+        toggleStream();
     }
 
     private void selectQuality() {
@@ -77,11 +79,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             String ip,port,path;
 
             // We parse the URI written in the Editext
-            ip = "";
-            port = "8088";
-            path = "";
+            ip = "192.168.1.40";
+            port = "1935";
+            path = "foobar/test.stream";
 
-            mClient.setCredentials("devinmui", "foobar");
+            mClient.setCredentials("devin", "foobar");
             mClient.setServerAddress(ip, Integer.parseInt(port));
             mClient.setStreamPath("/"+path);
             mClient.startStream();
@@ -148,7 +150,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void surfaceCreated(SurfaceHolder surfaceHolder) {
-
+        mSession.startPreview();
     }
 
     @Override
@@ -158,6 +160,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
+        mClient.stopStream();
+    }
 
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        mClient.release();
+        mSession.release();
+        mSurfaceView.getHolder().removeCallback(this);
     }
 }

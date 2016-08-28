@@ -20,6 +20,7 @@ public class ListenerService extends WearableListenerService implements RtspClie
 
     private Session mSession;
     private RtspClient mClient;
+    private MapsActivity mapsActivity;
     private SurfaceView mSurfaceView;
     final Context ctx = this.getApplicationContext();
 
@@ -27,7 +28,7 @@ public class ListenerService extends WearableListenerService implements RtspClie
     public void onMessageReceived(MessageEvent messageEvent) {
         showToast(messageEvent.getPath());
         // Configures the RTSP client
-        //mSurfaceView = (SurfaceView) MapsActivity.findViewById(R.id.surface);
+        mSurfaceView = (SurfaceView) mapsActivity.findViewById(R.id.surface);
 
         // Configures the SessionBuilder
         mSession = SessionBuilder.getInstance()
@@ -70,14 +71,15 @@ public class ListenerService extends WearableListenerService implements RtspClie
     // Connects/disconnects to the RTSP server and starts/stops the stream
     public void toggleStream() {
         if (!mClient.isStreaming()) {
+            Toast.makeText(ListenerService.this, "", Toast.LENGTH_SHORT).show();
             String ip,port,path;
 
             // We parse the URI written in the Editext
-            ip = "";
-            port = "8088";
-            path = "";
+            ip = "192.168.1.40";
+            port = "1935";
+            path = "foobar/test.stream";
 
-            mClient.setCredentials("devinmui", "foobar");
+            mClient.setCredentials("devinmui", "awesomeness1");
             mClient.setServerAddress(ip, Integer.parseInt(port));
             mClient.setStreamPath("/"+path);
             mClient.startStream();

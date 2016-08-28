@@ -9,7 +9,7 @@ var lat, long;
 var panic = false;
 
 app.get('/', function(req, res){
-    res.send("ayy lmao")    
+    res.sendfile("index.html")    
 })
 
 app.post('/gps', function(req, res){
