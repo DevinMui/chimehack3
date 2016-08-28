@@ -71,7 +71,6 @@ public class ListenerService extends WearableListenerService implements RtspClie
     // Connects/disconnects to the RTSP server and starts/stops the stream
     public void toggleStream() {
         if (!mClient.isStreaming()) {
-            Toast.makeText(ListenerService.this, "", Toast.LENGTH_SHORT).show();
             String ip,port,path;
 
             // We parse the URI written in the Editext

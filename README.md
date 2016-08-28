@@ -1,9 +1,8 @@
 # TODO
 
-* Test Android/Android Wear (ez)
-* Test livestream (meh)
-* Test JWPlayer (eh)
-* Stupid JWPlayer (try this maybe?: https://www.wowza.com/forums/content.php?726-How-to-play-video-using-the-HTML5-video-tag)
-* Get Drones flying (ez)
-* GPS Notify (ez)
-* Browser implementation of map (ez)
+* Test Android/Android Wear (ALMOST DONE)
+* Test livestream (DONE)
+* Test JWPlayer (DONE)
+* Get Drones flying (ez) - this 4 u jesse
+* GPS Notify (EZ)
+* Browser implementation of map (ez) - this 4 u jesse
