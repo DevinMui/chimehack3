@@ -8,8 +8,6 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 var lat, long;
-lat = 37.4530
-long = -122.1817
 var panic = false;
 
 app.get('/', function(req, res){
@@ -32,6 +30,8 @@ app.get('/gps', function(req, res){
 
 app.get('/nopanic', function(req, res){
 	panic = false
+	lat = undefined
+	long = undefined
 	res.send({})
 })
 
