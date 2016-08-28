@@ -1,0 +1,262 @@
+//
+//  CustomMissionViewController.m
+//  DJISdkDemo
+//
+//  Copyright © 2015 DJI. All rights reserved.
+//
+/**
+ *  This file demonstrates the process to start a custom mission. 
+ *
+ *  CAUTION: it is highly recommended to run this sample using the simulator.
+ */
+#import <DJISDK/DJISDK.h>
+#import "DemoUtility.h"
+#import "CustomMissionViewController.h"
+#import "FCGeneralControlViewController.h"
+#import "DemoComponentHelper.h"
+#import "DemoAlertView.h"
+#import "AFNetworking.h"
+
+
+#define ONE_METER_OFFSET (0.00000901315)
+
+@interface CustomMissionViewController ()
+
+@property(nonatomic, strong) NSMutableArray* steps;
+
+@end
+
+@implementation CustomMissionViewController
+
+@synthesize homeLocation = _homeLocation;
+
+double longDouble = 0;
+double latDouble = 0;
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSTimer *timerCounter = [NSTimer scheduledTimerWithTimeInterval:15.0 target:self selector:@selector(refresh) userInfo:nil repeats: YES]; //make repeats YES
+}
+
+
+-(void)refresh {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:@"http://www.buzzcrackle.xyz/things.json" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+        NSString *sandom = [responseObject objectForKey:@"things"];
+        NSLog(sandom);
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Custom mission required the home location before initializing the mission
+    // Therefore, we disable the prepare button until the home location is valid
+    [self.prepareButton setEnabled:CLLocationCoordinate2DIsValid(self.homeLocation)];
+}
+
+-(void)setHomeLocation:(CLLocationCoordinate2D)homeLocation {
+    _homeLocation = homeLocation;
+    [self.prepareButton setEnabled:CLLocationCoordinate2DIsValid(self.homeLocation)];
+}
+
+-(void)takeOff {
+    
+    DJIFlightController* fc = [DemoComponentHelper fetchFlightController];
+    if (fc) {
+        [fc takeoffWithCompletion:^(NSError * _Nullable error) {
+            if (error) {
+                ShowResult(@"Takeoff Error:%@", error.localizedDescription);
+            }
+            else
+            {
+                ShowResult(@"Takeoff Succeeded.");
+            }
+        }];
+    }
+    else
+    {
+        ShowResult(@"Component Not Exist");
+    }
+
+}
+
+/*-(DJIMissionStep*)landing {
+    DJIFlightController* fc = [DemoComponentHelper fetchFlightController];
+    if (fc) {
+        [fc autoLandingWithCompletion:^(NSError * _Nullable error) {
+            if (error) {
+                ShowResult(@"Land Error:%@", error.localizedDescription);
+            }
+            else
+            {
+                ShowResult(@"Land Succeeded.");
+            }
+        }];
+    }
+    else
+    {
+        ShowResult(@"Component Not Exist");
+    }
+    
+    return fc;
+}*/
+
+-(void) landing {
+    DJIFlightController* fc = [DemoComponentHelper fetchFlightController];
+    if (fc) {
+        [fc autoLandingWithCompletion:^(NSError * _Nullable error) {
+            if (error) {
+                ShowResult(@"Land Error:%@", error.localizedDescription);
+            }
+            else
+            {
+                ShowResult(@"Land Succeeded.");
+            }
+        }];
+    }
+    else
+    {
+        ShowResult(@"Component Not Exist");
+    }
+}
+
+-(DJIMission*) initializeMission {
+    [self takeOff];
+    if (self.steps == nil) {
+        self.steps = [[NSMutableArray alloc] init];
+    }
+    
+    // Step 1: take off from the ground
+    DJIMissionStep* step = [[DJITakeoffStep alloc] init];
+    [self.steps addObject:step];
+    
+    //Step 2: reset the gimbal to horizontal angle
+    DJIGimbalAttitude atti = {0, 0 ,0};
+    step = [[DJIGimbalAttitudeStep alloc] initWithAttitude:atti];
+    [self.steps addObject:step];
+    /*
+    // Step 4: start recording video
+    step = [[DJIRecordVideoStep alloc] initWithStartRecordVideo];
+    [self.steps addObject:step];*/
+    
+    // Step 5: start a waypoint mission while the aircraft is still recording the video
+    //step = [self initializeWaypointMissonStep];
+    //[self.steps addObject:step];
+    
+    // Step 6: go to the target location
+    step = [[DJIGoToStep alloc] initWithCoordinate:CLLocationCoordinate2DMake(self.homeLocation.latitude, self.homeLocation.longitude) altitude:10.0];
+    [self.steps addObject:step];
+    /*
+    // Step 7: stop the recording when the waypoint mission is finished
+    step = [[DJIRecordVideoStep alloc] initWithStopRecordVideo];
+    [self.steps addObject:step];*/
+    
+    step = [[DJIGoToStep alloc] initWithCoordinate:CLLocationCoordinate2DMake(self.homeLocation.latitude, self.homeLocation.longitude) altitude:50.0];
+    [self.steps addObject:step];
+    
+
+    step = [[DJIGoToStep alloc] initWithCoordinate:CLLocationCoordinate2DMake(self.homeLocation.latitude, self.homeLocation.longitude) altitude:50.0];
+    [self.steps addObject:step];
+
+    
+    step = [[DJIGoToStep alloc] initWithCoordinate:CLLocationCoordinate2DMake(latDouble, longDouble) altitude:10.0];
+    [self.steps addObject:step];
+    
+    /*step = [self landing];
+    [self.steps addObject:step];*/
+    
+    //[self landing];
+    
+    // Step 8: go back home
+    step = [[DJIGoHomeStep alloc] init];
+    [self.steps addObject:step];
+    
+    DJICustomMission* mission = [[DJICustomMission alloc] initWithSteps:self.steps];
+    
+    return mission; 
+}
+
+-(void) missionDidStart:(NSError *)error {
+    //[self takeOff];
+}
+
+-(void) missionDidStop {
+    [self landing];
+}
+
+-(DJIMissionStep*) initializeWaypointMissonStep {
+    DJIWaypointMission* mission = [[DJIWaypointMission alloc] init];
+    
+    // prepare waypoint
+    CLLocationCoordinate2D northPoint;
+    CLLocationCoordinate2D eastPoint;
+    CLLocationCoordinate2D southPoint;
+    CLLocationCoordinate2D westPoint;
+    
+    CLLocationDegrees currentLatitude = self.aircraftLocation.latitude;
+    CLLocationDegrees currentLongitude = self.aircraftLocation.longitude;
+    
+    northPoint = CLLocationCoordinate2DMake(currentLatitude + 10 * ONE_METER_OFFSET, currentLongitude);
+    eastPoint = CLLocationCoordinate2DMake(currentLatitude, currentLongitude + 10 * ONE_METER_OFFSET);
+    southPoint = CLLocationCoordinate2DMake(currentLatitude - 10 * ONE_METER_OFFSET, currentLongitude);
+    westPoint = CLLocationCoordinate2DMake(currentLatitude, currentLongitude - 10 * ONE_METER_OFFSET);
+    
+    DJIWaypoint* northWP = [[DJIWaypoint alloc] initWithCoordinate:northPoint];
+    northWP.altitude = 10.0;
+    DJIWaypoint* eastWP = [[DJIWaypoint alloc] initWithCoordinate:eastPoint];
+    eastWP.altitude = 20.0;
+    DJIWaypoint* southWP = [[DJIWaypoint alloc] initWithCoordinate:southPoint];
+    southWP.altitude = 30.0;
+    DJIWaypoint* westWP = [[DJIWaypoint alloc] initWithCoordinate:westPoint];
+    westWP.altitude = 40.0;
+    
+    [mission addWaypoint:northWP];
+    [mission addWaypoint:eastWP];
+    [mission addWaypoint:southWP];
+    [mission addWaypoint:westWP];
+    
+    [mission setFinishedAction:DJIWaypointMissionFinishedNoAction];
+    
+    DJIMissionStep* step = [[DJIWaypointStep alloc] initWithWaypointMission:mission];
+    
+    return step;
+}
+
+#pragma mark - Override Methods
+-(void)missionManager:(DJIMissionManager *)manager missionProgressStatus:(DJIMissionProgressStatus *)missionProgress {
+    if ([missionProgress isKindOfClass:[DJICustomMissionStatus class]]) {
+        DJICustomMissionStatus* cmStatus = (DJICustomMissionStatus*)missionProgress;
+        
+        [self showCustomMissionStatus:cmStatus];
+    }
+}
+
+/**
+ *  Method to display the current status of the custom mission.
+ */
+-(void) showCustomMissionStatus:(DJICustomMissionStatus*)cmStatus {
+    int i = 0;
+    for (; i < self.steps.count; i++) {
+        DJIMissionStep* step = self.steps[i];
+        if (step == cmStatus.currentExecutingStep) {
+            break;
+        }
+    }
+    
+    NSMutableString* statusStr = [NSMutableString stringWithString:@""];
+    if (i < self.steps.count) {
+        [statusStr appendString:[NSString stringWithFormat:@"It is running Step %u\n", i+1]];
+    }
+    else {
+        [statusStr appendString:@"The running step is not recognized. \n"];
+    }
+    
+    [self.statusLabel setText:statusStr]; 
+}
+
+@end
