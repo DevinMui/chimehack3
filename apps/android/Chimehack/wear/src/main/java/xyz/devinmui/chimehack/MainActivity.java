@@ -154,7 +154,7 @@ public class MainActivity extends WearableActivity implements SensorEventListene
             // Change background color if gForce exceeds threshold;
             // otherwise, reset the color
             if(gForce > SHAKE_THRESHOLD) {
-
+                sendToast();
                 //mView.setBackgroundColor(Color.rgb(0, 100, 0));
 
             }
