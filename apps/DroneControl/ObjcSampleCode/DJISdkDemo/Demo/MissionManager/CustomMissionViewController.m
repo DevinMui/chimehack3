@@ -30,8 +30,10 @@
 
 @synthesize homeLocation = _homeLocation;
 
-double longDouble = 0;
-double latDouble = 0;
+double longDouble;
+double latDouble;
+
+double savedLat;
 
 -(void)viewDidLoad {
     [super viewDidLoad];
@@ -42,10 +44,38 @@ double latDouble = 0;
 
 -(void)refresh {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:@"http://www.buzzcrackle.xyz/things.json" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+    [manager GET:@"http://dhsrobotics.com:3000/gps" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
-        NSString *sandom = [responseObject objectForKey:@"things"];
-        NSLog(sandom);
+        NSString *JSONlong = [responseObject objectForKey:@"long"];
+        NSString *JSONlat = [responseObject objectForKey:@"lat"];
+        
+        double locallong = [JSONlong doubleValue];
+        double locallat = [JSONlat doubleValue];
+        
+        if ([responseObject count] == 0) {
+            
+        } else {
+            
+            if (locallat != savedLat) {
+                
+                longDouble = locallong;
+                latDouble = locallat;
+                
+                savedLat = locallat;
+            
+                self.mission = [self initializeMission];
+            
+                [[DJIMissionManager sharedInstance] startMissionExecutionWithCompletion:^(NSError * _Nullable error) {
+                    if (error) {
+                        ShowResult(@"ERROR: startMissionExecutionWithCompletion:. %@", error.description);
+                    }
+                    else {
+                        ShowResult(@"SUCCESS: startMissionExecutionWithCompletion:. ");
+                    }
+                    [self missionDidStart:error];
+                }];
+            }
+        }
     } failure:^(NSURLSessionTask *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EDE262AEA3B570A610965DEE'
+               BlueprintIdentifier = '26C0B0A287327E35B5B9B811'
                BlueprintName = 'Pods-chimehax'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_chimehax.framework'>

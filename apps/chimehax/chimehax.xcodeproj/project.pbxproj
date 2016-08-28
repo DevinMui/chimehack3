@@ -1,1127 +1,592 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0282C59B1D7257FC006686D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0282C5A61D7257FC006686D7</string>
-				<string>0282C5BB1D7257FD006686D7</string>
-				<string>0282C5C61D7257FD006686D7</string>
-				<string>0282C5A51D7257FC006686D7</string>
-				<string>1B6AFE576E389F8D5C03BBBB</string>
-				<string>4B94A56E9F5A5AB684B1D447</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C59C1D7257FC006686D7</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Jesse Liang</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>0282C5A31D7257FC006686D7</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>DevelopmentTeam</key>
-						<string>H598HBDDJ8</string>
-					</dict>
-					<key>0282C5B71D7257FD006686D7</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>DevelopmentTeam</key>
-						<string>H598HBDDJ8</string>
-						<key>TestTargetID</key>
-						<string>0282C5A31D7257FC006686D7</string>
-					</dict>
-					<key>0282C5C21D7257FD006686D7</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>DevelopmentTeam</key>
-						<string>H598HBDDJ8</string>
-						<key>TestTargetID</key>
-						<string>0282C5A31D7257FC006686D7</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>0282C59F1D7257FC006686D7</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>0282C59B1D7257FC006686D7</string>
-			<key>productRefGroup</key>
-			<string>0282C5A51D7257FC006686D7</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>0282C5A31D7257FC006686D7</string>
-				<string>0282C5B71D7257FD006686D7</string>
-				<string>0282C5C21D7257FD006686D7</string>
-			</array>
-		</dict>
-		<key>0282C59F1D7257FC006686D7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0282C5CA1D7257FD006686D7</string>
-				<string>0282C5CB1D7257FD006686D7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0282C5A01D7257FC006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0282C5AA1D7257FC006686D7</string>
-				<string>0282C5A81D7257FC006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5A11D7257FC006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>60F11150B90A2C9F3FDA1D9B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5A21D7257FC006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0282C5B21D7257FC006686D7</string>
-				<string>0282C5AF1D7257FC006686D7</string>
-				<string>0282C5AD1D7257FC006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5A31D7257FC006686D7</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0282C5CC1D7257FD006686D7</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B860874E97D364514BE444C3</string>
-				<string>0282C5A01D7257FC006686D7</string>
-				<string>0282C5A11D7257FC006686D7</string>
-				<string>0282C5A21D7257FC006686D7</string>
-				<string>E1CBFDFF70F97F38D7208516</string>
-				<string>A596191512E602885BC089DA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>chimehax</string>
-			<key>productName</key>
-			<string>chimehax</string>
-			<key>productReference</key>
-			<string>0282C5A41D7257FC006686D7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>0282C5A41D7257FC006686D7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>chimehax.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0282C5A51D7257FC006686D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0282C5A41D7257FC006686D7</string>
-				<string>0282C5B81D7257FD006686D7</string>
-				<string>0282C5C31D7257FD006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5A61D7257FC006686D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0282C5A71D7257FC006686D7</string>
-				<string>0282C5A91D7257FC006686D7</string>
-				<string>0282C5AB1D7257FC006686D7</string>
-				<string>0282C5AE1D7257FC006686D7</string>
-				<string>0282C5B01D7257FC006686D7</string>
-				<string>0282C5B31D7257FC006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>chimehax</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5A71D7257FC006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5A81D7257FC006686D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0282C5A71D7257FC006686D7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0282C5A91D7257FC006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5AA1D7257FC006686D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0282C5A91D7257FC006686D7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0282C5AB1D7257FC006686D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0282C5AC1D7257FC006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5AC1D7257FC006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5AD1D7257FC006686D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0282C5AB1D7257FC006686D7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0282C5AE1D7257FC006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5AF1D7257FC006686D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0282C5AE1D7257FC006686D7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0282C5B01D7257FC006686D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0282C5B11D7257FC006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5B11D7257FC006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5B21D7257FC006686D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0282C5B01D7257FC006686D7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0282C5B31D7257FC006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5B41D7257FD006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0282C5BD1D7257FD006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5B51D7257FD006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5B61D7257FD006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5B71D7257FD006686D7</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0282C5CF1D7257FD006686D7</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0282C5B41D7257FD006686D7</string>
-				<string>0282C5B51D7257FD006686D7</string>
-				<string>0282C5B61D7257FD006686D7</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>0282C5BA1D7257FD006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>chimehaxTests</string>
-			<key>productName</key>
-			<string>chimehaxTests</string>
-			<key>productReference</key>
-			<string>0282C5B81D7257FD006686D7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>0282C5B81D7257FD006686D7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>chimehaxTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0282C5B91D7257FD006686D7</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>0282C59C1D7257FC006686D7</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>0282C5A31D7257FC006686D7</string>
-			<key>remoteInfo</key>
-			<string>chimehax</string>
-		</dict>
-		<key>0282C5BA1D7257FD006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>0282C5A31D7257FC006686D7</string>
-			<key>targetProxy</key>
-			<string>0282C5B91D7257FD006686D7</string>
-		</dict>
-		<key>0282C5BB1D7257FD006686D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0282C5BC1D7257FD006686D7</string>
-				<string>0282C5BE1D7257FD006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>chimehaxTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5BC1D7257FD006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>chimehaxTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5BD1D7257FD006686D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0282C5BC1D7257FD006686D7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0282C5BE1D7257FD006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5BF1D7257FD006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0282C5C81D7257FD006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5C01D7257FD006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5C11D7257FD006686D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0282C5C21D7257FD006686D7</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0282C5D21D7257FD006686D7</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0282C5BF1D7257FD006686D7</string>
-				<string>0282C5C01D7257FD006686D7</string>
-				<string>0282C5C11D7257FD006686D7</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>0282C5C51D7257FD006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>chimehaxUITests</string>
-			<key>productName</key>
-			<string>chimehaxUITests</string>
-			<key>productReference</key>
-			<string>0282C5C31D7257FD006686D7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>0282C5C31D7257FD006686D7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>chimehaxUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0282C5C41D7257FD006686D7</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>0282C59C1D7257FC006686D7</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>0282C5A31D7257FC006686D7</string>
-			<key>remoteInfo</key>
-			<string>chimehax</string>
-		</dict>
-		<key>0282C5C51D7257FD006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>0282C5A31D7257FC006686D7</string>
-			<key>targetProxy</key>
-			<string>0282C5C41D7257FD006686D7</string>
-		</dict>
-		<key>0282C5C61D7257FD006686D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0282C5C71D7257FD006686D7</string>
-				<string>0282C5C91D7257FD006686D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>chimehaxUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5C71D7257FD006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>chimehaxUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5C81D7257FD006686D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0282C5C71D7257FD006686D7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0282C5C91D7257FD006686D7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0282C5CA1D7257FD006686D7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0282C5CB1D7257FD006686D7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0282C5CC1D7257FD006686D7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0282C5CD1D7257FD006686D7</string>
-				<string>0282C5CE1D7257FD006686D7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0282C5CD1D7257FD006686D7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>88D67DD7D01395DD76AB1734</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>chimehax/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.jesseliang.chimehax</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0282C5CE1D7257FD006686D7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E2FAE0D19F86E7174AE4FCF6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>chimehax/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.jesseliang.chimehax</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0282C5CF1D7257FD006686D7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0282C5D01D7257FD006686D7</string>
-				<string>0282C5D11D7257FD006686D7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0282C5D01D7257FD006686D7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>chimehaxTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.jesseliang.chimehaxTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/chimehax.app/chimehax</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0282C5D11D7257FD006686D7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>chimehaxTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.jesseliang.chimehaxTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/chimehax.app/chimehax</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0282C5D21D7257FD006686D7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0282C5D31D7257FD006686D7</string>
-				<string>0282C5D41D7257FD006686D7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0282C5D31D7257FD006686D7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>chimehaxUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.jesseliang.chimehaxUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>chimehax</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0282C5D41D7257FD006686D7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>chimehaxUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.jesseliang.chimehaxUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>chimehax</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>06D99D99B558D9BCCF17563B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_chimehax.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1B6AFE576E389F8D5C03BBBB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>88D67DD7D01395DD76AB1734</string>
-				<string>E2FAE0D19F86E7174AE4FCF6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B94A56E9F5A5AB684B1D447</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06D99D99B558D9BCCF17563B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>60F11150B90A2C9F3FDA1D9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06D99D99B558D9BCCF17563B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>88D67DD7D01395DD76AB1734</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-chimehax.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-chimehax/Pods-chimehax.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A596191512E602885BC089DA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-chimehax/Pods-chimehax-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B860874E97D364514BE444C3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E1CBFDFF70F97F38D7208516</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-chimehax/Pods-chimehax-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E2FAE0D19F86E7174AE4FCF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-chimehax.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-chimehax/Pods-chimehax.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>0282C59C1D7257FC006686D7</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0282C5A81D7257FC006686D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282C5A71D7257FC006686D7 /* AppDelegate.swift */; };
+		0282C5AA1D7257FC006686D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282C5A91D7257FC006686D7 /* ViewController.swift */; };
+		0282C5AD1D7257FC006686D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0282C5AB1D7257FC006686D7 /* Main.storyboard */; };
+		0282C5AF1D7257FC006686D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0282C5AE1D7257FC006686D7 /* Assets.xcassets */; };
+		0282C5B21D7257FC006686D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0282C5B01D7257FC006686D7 /* LaunchScreen.storyboard */; };
+		0282C5BD1D7257FD006686D7 /* chimehaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282C5BC1D7257FD006686D7 /* chimehaxTests.swift */; };
+		0282C5C81D7257FD006686D7 /* chimehaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282C5C71D7257FD006686D7 /* chimehaxUITests.swift */; };
+		60F11150B90A2C9F3FDA1D9B /* Pods_chimehax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D99D99B558D9BCCF17563B /* Pods_chimehax.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0282C5B91D7257FD006686D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0282C59C1D7257FC006686D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0282C5A31D7257FC006686D7;
+			remoteInfo = chimehax;
+		};
+		0282C5C41D7257FD006686D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0282C59C1D7257FC006686D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0282C5A31D7257FC006686D7;
+			remoteInfo = chimehax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0282C5A41D7257FC006686D7 /* chimehax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chimehax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0282C5A71D7257FC006686D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0282C5A91D7257FC006686D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0282C5AC1D7257FC006686D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0282C5AE1D7257FC006686D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0282C5B11D7257FC006686D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0282C5B31D7257FC006686D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0282C5B81D7257FD006686D7 /* chimehaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chimehaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0282C5BC1D7257FD006686D7 /* chimehaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chimehaxTests.swift; sourceTree = "<group>"; };
+		0282C5BE1D7257FD006686D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0282C5C31D7257FD006686D7 /* chimehaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chimehaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0282C5C71D7257FD006686D7 /* chimehaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chimehaxUITests.swift; sourceTree = "<group>"; };
+		0282C5C91D7257FD006686D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06D99D99B558D9BCCF17563B /* Pods_chimehax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chimehax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D67DD7D01395DD76AB1734 /* Pods-chimehax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chimehax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chimehax/Pods-chimehax.debug.xcconfig"; sourceTree = "<group>"; };
+		E2FAE0D19F86E7174AE4FCF6 /* Pods-chimehax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chimehax.release.xcconfig"; path = "Pods/Target Support Files/Pods-chimehax/Pods-chimehax.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0282C5A11D7257FC006686D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F11150B90A2C9F3FDA1D9B /* Pods_chimehax.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0282C5B51D7257FD006686D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0282C5C01D7257FD006686D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0282C59B1D7257FC006686D7 = {
+			isa = PBXGroup;
+			children = (
+				0282C5A61D7257FC006686D7 /* chimehax */,
+				0282C5BB1D7257FD006686D7 /* chimehaxTests */,
+				0282C5C61D7257FD006686D7 /* chimehaxUITests */,
+				0282C5A51D7257FC006686D7 /* Products */,
+				1B6AFE576E389F8D5C03BBBB /* Pods */,
+				4B94A56E9F5A5AB684B1D447 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0282C5A51D7257FC006686D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0282C5A41D7257FC006686D7 /* chimehax.app */,
+				0282C5B81D7257FD006686D7 /* chimehaxTests.xctest */,
+				0282C5C31D7257FD006686D7 /* chimehaxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0282C5A61D7257FC006686D7 /* chimehax */ = {
+			isa = PBXGroup;
+			children = (
+				0282C5A71D7257FC006686D7 /* AppDelegate.swift */,
+				0282C5A91D7257FC006686D7 /* ViewController.swift */,
+				0282C5AB1D7257FC006686D7 /* Main.storyboard */,
+				0282C5AE1D7257FC006686D7 /* Assets.xcassets */,
+				0282C5B01D7257FC006686D7 /* LaunchScreen.storyboard */,
+				0282C5B31D7257FC006686D7 /* Info.plist */,
+			);
+			path = chimehax;
+			sourceTree = "<group>";
+		};
+		0282C5BB1D7257FD006686D7 /* chimehaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				0282C5BC1D7257FD006686D7 /* chimehaxTests.swift */,
+				0282C5BE1D7257FD006686D7 /* Info.plist */,
+			);
+			path = chimehaxTests;
+			sourceTree = "<group>";
+		};
+		0282C5C61D7257FD006686D7 /* chimehaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0282C5C71D7257FD006686D7 /* chimehaxUITests.swift */,
+				0282C5C91D7257FD006686D7 /* Info.plist */,
+			);
+			path = chimehaxUITests;
+			sourceTree = "<group>";
+		};
+		1B6AFE576E389F8D5C03BBBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88D67DD7D01395DD76AB1734 /* Pods-chimehax.debug.xcconfig */,
+				E2FAE0D19F86E7174AE4FCF6 /* Pods-chimehax.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B94A56E9F5A5AB684B1D447 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06D99D99B558D9BCCF17563B /* Pods_chimehax.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0282C5A31D7257FC006686D7 /* chimehax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0282C5CC1D7257FD006686D7 /* Build configuration list for PBXNativeTarget "chimehax" */;
+			buildPhases = (
+				B860874E97D364514BE444C3 /* Check Pods Manifest.lock */,
+				0282C5A01D7257FC006686D7 /* Sources */,
+				0282C5A11D7257FC006686D7 /* Frameworks */,
+				0282C5A21D7257FC006686D7 /* Resources */,
+				E1CBFDFF70F97F38D7208516 /* Embed Pods Frameworks */,
+				A596191512E602885BC089DA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chimehax;
+			productName = chimehax;
+			productReference = 0282C5A41D7257FC006686D7 /* chimehax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0282C5B71D7257FD006686D7 /* chimehaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0282C5CF1D7257FD006686D7 /* Build configuration list for PBXNativeTarget "chimehaxTests" */;
+			buildPhases = (
+				0282C5B41D7257FD006686D7 /* Sources */,
+				0282C5B51D7257FD006686D7 /* Frameworks */,
+				0282C5B61D7257FD006686D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0282C5BA1D7257FD006686D7 /* PBXTargetDependency */,
+			);
+			name = chimehaxTests;
+			productName = chimehaxTests;
+			productReference = 0282C5B81D7257FD006686D7 /* chimehaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0282C5C21D7257FD006686D7 /* chimehaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0282C5D21D7257FD006686D7 /* Build configuration list for PBXNativeTarget "chimehaxUITests" */;
+			buildPhases = (
+				0282C5BF1D7257FD006686D7 /* Sources */,
+				0282C5C01D7257FD006686D7 /* Frameworks */,
+				0282C5C11D7257FD006686D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0282C5C51D7257FD006686D7 /* PBXTargetDependency */,
+			);
+			name = chimehaxUITests;
+			productName = chimehaxUITests;
+			productReference = 0282C5C31D7257FD006686D7 /* chimehaxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0282C59C1D7257FC006686D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jesse Liang";
+				TargetAttributes = {
+					0282C5A31D7257FC006686D7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H598HBDDJ8;
+					};
+					0282C5B71D7257FD006686D7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H598HBDDJ8;
+						TestTargetID = 0282C5A31D7257FC006686D7;
+					};
+					0282C5C21D7257FD006686D7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H598HBDDJ8;
+						TestTargetID = 0282C5A31D7257FC006686D7;
+					};
+				};
+			};
+			buildConfigurationList = 0282C59F1D7257FC006686D7 /* Build configuration list for PBXProject "chimehax" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0282C59B1D7257FC006686D7;
+			productRefGroup = 0282C5A51D7257FC006686D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0282C5A31D7257FC006686D7 /* chimehax */,
+				0282C5B71D7257FD006686D7 /* chimehaxTests */,
+				0282C5C21D7257FD006686D7 /* chimehaxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0282C5A21D7257FC006686D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0282C5B21D7257FC006686D7 /* LaunchScreen.storyboard in Resources */,
+				0282C5AF1D7257FC006686D7 /* Assets.xcassets in Resources */,
+				0282C5AD1D7257FC006686D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0282C5B61D7257FD006686D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0282C5C11D7257FD006686D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A596191512E602885BC089DA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chimehax/Pods-chimehax-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B860874E97D364514BE444C3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1CBFDFF70F97F38D7208516 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chimehax/Pods-chimehax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0282C5A01D7257FC006686D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0282C5AA1D7257FC006686D7 /* ViewController.swift in Sources */,
+				0282C5A81D7257FC006686D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0282C5B41D7257FD006686D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0282C5BD1D7257FD006686D7 /* chimehaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0282C5BF1D7257FD006686D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0282C5C81D7257FD006686D7 /* chimehaxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0282C5BA1D7257FD006686D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0282C5A31D7257FC006686D7 /* chimehax */;
+			targetProxy = 0282C5B91D7257FD006686D7 /* PBXContainerItemProxy */;
+		};
+		0282C5C51D7257FD006686D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0282C5A31D7257FC006686D7 /* chimehax */;
+			targetProxy = 0282C5C41D7257FD006686D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0282C5AB1D7257FC006686D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0282C5AC1D7257FC006686D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0282C5B01D7257FC006686D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0282C5B11D7257FC006686D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0282C5CA1D7257FD006686D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0282C5CB1D7257FD006686D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0282C5CD1D7257FD006686D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D67DD7D01395DD76AB1734 /* Pods-chimehax.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = chimehax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.chimehax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0282C5CE1D7257FD006686D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FAE0D19F86E7174AE4FCF6 /* Pods-chimehax.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = chimehax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.chimehax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0282C5D01D7257FD006686D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = chimehaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.chimehaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chimehax.app/chimehax";
+			};
+			name = Debug;
+		};
+		0282C5D11D7257FD006686D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = chimehaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.chimehaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chimehax.app/chimehax";
+			};
+			name = Release;
+		};
+		0282C5D31D7257FD006686D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = chimehaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.chimehaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = chimehax;
+			};
+			name = Debug;
+		};
+		0282C5D41D7257FD006686D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = chimehaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.chimehaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = chimehax;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0282C59F1D7257FC006686D7 /* Build configuration list for PBXProject "chimehax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0282C5CA1D7257FD006686D7 /* Debug */,
+				0282C5CB1D7257FD006686D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0282C5CC1D7257FD006686D7 /* Build configuration list for PBXNativeTarget "chimehax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0282C5CD1D7257FD006686D7 /* Debug */,
+				0282C5CE1D7257FD006686D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0282C5CF1D7257FD006686D7 /* Build configuration list for PBXNativeTarget "chimehaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0282C5D01D7257FD006686D7 /* Debug */,
+				0282C5D11D7257FD006686D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0282C5D21D7257FD006686D7 /* Build configuration list for PBXNativeTarget "chimehaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0282C5D31D7257FD006686D7 /* Debug */,
+				0282C5D41D7257FD006686D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0282C59C1D7257FC006686D7 /* Project object */;
+}
