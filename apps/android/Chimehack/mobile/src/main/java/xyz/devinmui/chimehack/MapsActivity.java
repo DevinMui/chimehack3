@@ -1,9 +1,14 @@
 package xyz.devinmui.chimehack;
 
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationManager;
+import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
 
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -15,13 +20,24 @@ import net.majorkernelpanic.streaming.gl.SurfaceView;
 import net.majorkernelpanic.streaming.rtsp.RtspClient;
 import net.majorkernelpanic.streaming.video.VideoQuality;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, Session.Callback, RtspClient.Callback, SurfaceHolder.Callback {
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
+
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, Session.Callback, RtspClient.Callback, SurfaceHolder.Callback, LocationListener {
 
     private GoogleMap mMap;
 
     private Session mSession;
     private RtspClient mClient;
     private SurfaceView mSurfaceView;
+
+    Api mApi = new Api();
+
+    double latitude;
+    double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +79,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mSurfaceView.getHolder().addCallback(this);
 
         selectQuality();
+
+
+        LocationManager locationManager = (LocationManager)
+                getSystemService(Context.LOCATION_SERVICE);
 
         toggleStream();
     }
@@ -169,5 +189,58 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mClient.release();
         mSession.release();
         mSurfaceView.getHolder().removeCallback(this);
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        latitude = location.getLatitude();
+        longitude = location.getLongitude();
+    }
+
+    private class Task extends AsyncTask<String, Void, String> {
+        private Context mContext;
+
+        public Task (Context context){
+            mContext = context;
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+            // do stuff
+            while(true) {
+                String json = "{\"lat\":" + latitude + ", \"long\":" + longitude + "}";
+                try {
+                    mApi.post("/gps", json, new Callback() {
+                        @Override
+                        public void onFailure(Call call, IOException e) {
+
+                        }
+
+                        @Override
+                        public void onResponse(Call call, Response response) throws IOException {
+
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    Thread.sleep(15000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+        }
+
+        @Override
+        protected void onPreExecute() {}
+
+        @Override
+        protected void onProgressUpdate(Void... values) {}
     }
 }
