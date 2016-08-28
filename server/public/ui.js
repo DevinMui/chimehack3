@@ -13,7 +13,7 @@
 
     $(document).ready(function () {
 
-        var streamUri = "rtmp://192.168.1.40:1935/foobar/test.stream";
+        var streamUri = "rtmp://104.236.187.122:1935/foobar/test.stream";
 
 	     startPlayer(streamUri);
 
