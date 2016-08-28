@@ -1,6 +1,10 @@
 package xyz.devinmui.chimehack;
 
 import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener2;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.AsyncTask;
@@ -26,9 +30,13 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, Session.Callback, RtspClient.Callback, SurfaceHolder.Callback, LocationListener {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, Session.Callback, RtspClient.Callback, SurfaceHolder.Callback, LocationListener, SensorEventListener2 {
 
     private GoogleMap mMap;
+
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+    private ShakeDetector mShakeDetector;
 
     private Session mSession;
     private RtspClient mClient;
@@ -84,7 +92,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LocationManager locationManager = (LocationManager)
                 getSystemService(Context.LOCATION_SERVICE);
 
-        toggleStream();
+        //toggleStream();
+        // ShakeDetector initialization
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager
+                .getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector();
+        mShakeDetector.setOnShakeListener(new ShakeDetector.OnShakeListener() {
+
+            @Override
+            public void onShake(int count) {
+				/*
+				 * The following method, "handleShakeEvent(count):" is a stub //
+				 * method you would use to setup whatever you want done once the
+				 * device has been shook.
+				 */
+                toggleStream();
+
+            }
+        });
+        //Task task = new Task();
+        //task.execute();
+    }
+
+    @Override
+    public void onResume(){
+        mSensorManager.registerListener(mShakeDetector, mAccelerometer,	SensorManager.SENSOR_DELAY_UI);
+    }
+
+    @Override
+    public void onPause() {
+        // Add the following line to unregister the Sensor Manager onPause
+        mSensorManager.unregisterListener(mShakeDetector);
+        super.onPause();
     }
 
     private void selectQuality() {
@@ -96,6 +136,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     // Connects/disconnects to the RTSP server and starts/stops the stream
     public void toggleStream() {
         if (!mClient.isStreaming()) {
+            String json = "{\"lat\":" + latitude + ", \"long\":" + longitude + "}";
+            try {
+                mApi.post("/gps", json, new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {
+
+                    }
+
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+
+                    }
+                });
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             String ip,port,path;
 
             // We parse the URI written in the Editext
@@ -110,6 +166,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         } else {
             // Stops the stream and disconnects from the RTSP server
+            mApi.get("/nopanic", new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+
+                }
+            });
             mClient.stopStream();
         }
     }
@@ -197,50 +264,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         longitude = location.getLongitude();
     }
 
-    private class Task extends AsyncTask<String, Void, String> {
-        private Context mContext;
+    @Override
+    public void onFlushCompleted(Sensor sensor) {
 
-        public Task (Context context){
-            mContext = context;
-        }
-
-        @Override
-        protected String doInBackground(String... params) {
-            // do stuff
-            while(true) {
-                String json = "{\"lat\":" + latitude + ", \"long\":" + longitude + "}";
-                try {
-                    mApi.post("/gps", json, new Callback() {
-                        @Override
-                        public void onFailure(Call call, IOException e) {
-
-                        }
-
-                        @Override
-                        public void onResponse(Call call, Response response) throws IOException {
-
-                        }
-                    });
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    Thread.sleep(15000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-        }
-
-        @Override
-        protected void onPreExecute() {}
-
-        @Override
-        protected void onProgressUpdate(Void... values) {}
     }
+
+    @Override
+    public void onSensorChanged(SensorEvent sensorEvent) {
+
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
+    }
+    
 }
