@@ -2,6 +2,7 @@ package xyz.devinmui.chimehack;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.SurfaceHolder;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -10,20 +11,23 @@ import com.google.android.gms.maps.SupportMapFragment;
 import net.majorkernelpanic.streaming.Session;
 import net.majorkernelpanic.streaming.SessionBuilder;
 import net.majorkernelpanic.streaming.audio.AudioQuality;
+import net.majorkernelpanic.streaming.gl.SurfaceView;
 import net.majorkernelpanic.streaming.rtsp.RtspClient;
 import net.majorkernelpanic.streaming.video.VideoQuality;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, Session.Callback, RtspClient.Callback, SurfaceHolder.Callback {
 
     private GoogleMap mMap;
 
     private Session mSession;
     private RtspClient mClient;
+    private SurfaceView mSurfaceView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        mSurfaceView = (SurfaceView) findViewById(R.id.surface);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -36,15 +40,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .setAudioEncoder(SessionBuilder.AUDIO_AAC)
                 .setAudioQuality(new AudioQuality(8000,16000))
                 .setVideoEncoder(SessionBuilder.VIDEO_H264)
-                //.setSurfaceView(mSurfaceView)
+                .setSurfaceView(mSurfaceView)
                 .setPreviewOrientation(0)
-                .setCallback((Session.Callback) this)
+                .setCallback(this)
                 .build();
 
         // Configures the RTSP client
         mClient = new RtspClient();
         mClient.setSession(mSession);
-        mClient.setCallback((RtspClient.Callback) this);
+        mClient.setCallback(this);
 
         // Use this to force streaming with the MediaRecorder API
         //mSession.getVideoTrack().setStreamingMethod(MediaStream.MODE_MEDIARECORDER_API);
@@ -56,7 +60,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // respect the aspect ratio of the camera preview
         //mSurfaceView.setAspectRatioMode(SurfaceView.ASPECT_RATIO_PREVIEW);
 
-        //mSurfaceView.getHolder().addCallback(this);
+        mSurfaceView.getHolder().addCallback(this);
 
         selectQuality();
     }
@@ -105,5 +109,55 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        LatLng sydney = new LatLng(-34, 151);
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+
+    @Override
+    public void onBitrateUpdate(long bitrate) {
+
+    }
+
+    @Override
+    public void onSessionError(int reason, int streamType, Exception e) {
+
+    }
+
+    @Override
+    public void onPreviewStarted() {
+
+    }
+
+    @Override
+    public void onSessionConfigured() {
+
+    }
+
+    @Override
+    public void onSessionStarted() {
+
+    }
+
+    @Override
+    public void onSessionStopped() {
+
+    }
+
+    @Override
+    public void onRtspUpdate(int message, Exception exception) {
+
+    }
+
+    @Override
+    public void surfaceCreated(SurfaceHolder surfaceHolder) {
+
+    }
+
+    @Override
+    public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i1, int i2) {
+
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
+
     }
 }

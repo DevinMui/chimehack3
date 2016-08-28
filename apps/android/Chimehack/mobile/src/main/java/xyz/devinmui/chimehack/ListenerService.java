@@ -1,29 +1,48 @@
 package xyz.devinmui.chimehack;
 
+import android.content.Context;
 import android.widget.Toast;
 
 import com.google.android.gms.wearable.MessageEvent;
 import com.google.android.gms.wearable.WearableListenerService;
 
 import net.majorkernelpanic.streaming.Session;
+import net.majorkernelpanic.streaming.SessionBuilder;
+import net.majorkernelpanic.streaming.audio.AudioQuality;
+import net.majorkernelpanic.streaming.gl.SurfaceView;
 import net.majorkernelpanic.streaming.rtsp.RtspClient;
 import net.majorkernelpanic.streaming.video.VideoQuality;
 
 /**
  * Created by devinmui on 8/27/16.
  */
-public class ListenerService extends WearableListenerService {
+public class ListenerService extends WearableListenerService implements RtspClient.Callback, Session.Callback {
 
     private Session mSession;
     private RtspClient mClient;
+    private SurfaceView mSurfaceView;
+    final Context ctx = this.getApplicationContext();
 
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
         showToast(messageEvent.getPath());
         // Configures the RTSP client
+        //mSurfaceView = (SurfaceView) MapsActivity.findViewById(R.id.surface);
+
+        // Configures the SessionBuilder
+        mSession = SessionBuilder.getInstance()
+                .setContext(getApplicationContext())
+                .setAudioEncoder(SessionBuilder.AUDIO_AAC)
+                .setAudioQuality(new AudioQuality(8000,16000))
+                .setVideoEncoder(SessionBuilder.VIDEO_H264)
+                .setSurfaceView(mSurfaceView)
+                .setPreviewOrientation(0)
+                .setCallback(this)
+                .build();
+
         mClient = new RtspClient();
         mClient.setSession(mSession);
-        mClient.setCallback((RtspClient.Callback) this);
+        mClient.setCallback(this);
 
         // Use this to force streaming with the MediaRecorder API
         //mSession.getVideoTrack().setStreamingMethod(MediaStream.MODE_MEDIARECORDER_API);
@@ -73,4 +92,38 @@ public class ListenerService extends WearableListenerService {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 
+    @Override
+    public void onBitrateUpdate(long bitrate) {
+
+    }
+
+    @Override
+    public void onSessionError(int reason, int streamType, Exception e) {
+
+    }
+
+    @Override
+    public void onPreviewStarted() {
+
+    }
+
+    @Override
+    public void onSessionConfigured() {
+
+    }
+
+    @Override
+    public void onSessionStarted() {
+
+    }
+
+    @Override
+    public void onSessionStopped() {
+
+    }
+
+    @Override
+    public void onRtspUpdate(int message, Exception exception) {
+
+    }
 }
